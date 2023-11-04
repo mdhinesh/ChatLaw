@@ -1,27 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* cutomize the scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #d4b3b3;
+}
+
+/* make the scroll bar rounded cornered */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* For Firefox */
+/* Customize the scrollbar track */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #eee #888; /* Set the track and thumb colors */
+}
+
+/* For Internet Explorer and Microsoft Edge */
+/* This is an older method and is less widely supported */
+/* Customize the scrollbar track */
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Customize the scrollbar in Webkit-based browsers (Chrome, Safari, etc.) */
+/* Set the width and add rounded corners to the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+/* Add rounded corners to the thumb */
+::-webkit-scrollbar-thumb {
+  background: #c2b6b6;
+  border-radius: 5px;
+}
+
+/* Customize the scrollbar track (the non-draggable area) */
+/* Add rounded corners to the track */
+::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 5px;
 }
