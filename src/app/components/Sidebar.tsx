@@ -109,7 +109,7 @@ interface SidebarProps extends BoxProps {
 }
 
 const LinkItems: Array<LinkItemProps> = [
-  { name: 'New Chat', icon: FiPlusCircle, navigatto: '', isLogout: false },
+  // { name: 'New Chat', icon: FiPlusCircle, navigatto: '', isLogout: false },
   { name: 'Log out', icon: FiUser, navigatto: '/signup', isLogout: true },
   // { name: 'Explore', icon: FiCompass },
   // { name: 'Favourites', icon: FiStar },
@@ -136,7 +136,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
         <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
+          ChatLaw
         </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>

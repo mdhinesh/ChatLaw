@@ -72,7 +72,7 @@ export default function SignupCard() {
       localStorage.getItem("token") ? setIsUser(true) : setIsUser(false);
       isUser ? 
         router.push("/") : 
-        router.push("/login");
+        router.push("/signup");
     }, [isUser, router])
   
 
