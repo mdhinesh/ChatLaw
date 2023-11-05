@@ -84,7 +84,7 @@ export default function Home() {
     }))
     isUser ? 
       router.push("/") : 
-      router.push("/login");
+      router.push("/signup");
   }, [isUser, router])
 
   return (
