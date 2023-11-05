@@ -44,7 +44,7 @@ export default function Home() {
     try {
       // get answer from your model
       setLoading(true)
-      const response = await axios.post("https://75d2-35-247-58-249.ngrok-free.app/query", {
+      const response = await axios.post("https://97ae-34-67-235-116.ngrok.io/query", {
         query: qanda.question
       })
       console.log("Login successful", response.data.result)

@@ -119,7 +119,8 @@ const LinkItems: Array<LinkItemProps> = [
 const Logout = () => {
   localStorage.removeItem("token")
   localStorage.removeItem("username")
-  alert("Logout successful")
+  toast.success("Logout successful")
+  // alert("Logout successful")
   console.log("Logout successful")
 }
 
